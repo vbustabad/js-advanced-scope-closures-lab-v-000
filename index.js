@@ -3,8 +3,8 @@ function produceDrivingRange(blockRange) {
 
     let start = parseInt(beginning_point).slice(0, -2);
     let finish = parseInt(end_point).slice(0, -2);
-    
-    if ((start - finish) > blockRange) {
+
+    if ((finish - start) > blockRange) {
       return false;
     }
     else {
