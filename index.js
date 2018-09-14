@@ -14,7 +14,7 @@ function produceDrivingRange() {
 }
 
 function produceTipCalculator() {
-  let tenPercentTip = produceTipCalculator(.10)
+  let tenPercentTip = produceTipCalculator(.10);
 
   return function(percentage) {
     return tenPercentTip(bill_amount) * percentage;
