@@ -1,8 +1,5 @@
 function produceDrivingRange() {
 
-  let eightBlockRange = produceDrivingRange(8);
-  let twentyBlockRange = produceDrivingRange(20);
-
   return function(beginning_point, end_point) {
     if (beginning_point - end_point) > blockRange {
       return false;
@@ -14,7 +11,6 @@ function produceDrivingRange() {
 }
 
 function produceTipCalculator() {
-  let tenPercentTip = produceTipCalculator(.10);
 
   return function(bill_amount) {
     return (bill_amount) * percentage;
