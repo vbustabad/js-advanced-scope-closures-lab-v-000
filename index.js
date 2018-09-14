@@ -3,14 +3,14 @@ function produceDrivingRange(blockRange) {
 
     let start = parseInt(beginning_point);
     let finish = parseInt(end_point);
-    let difference = (finish - start);
-    let out_of_range = (difference - blockRange);
+    let distance = (finish - start);
+    let out_of_range = (distance - blockRange);
 
-    if (difference > blockRange) {
-      return "${} blocks out of range";
+    if (distance > blockRange) {
+      return "${out_of_range} blocks out of range";
     }
     else {
-      return "within range by $";
+      return "within range by ${}";
     }
   };
 }
