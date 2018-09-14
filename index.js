@@ -1,4 +1,4 @@
-function produceDrivingRange() {
+function produceDrivingRange(blockRange) {
   return function(beginning_point, end_point) {
     if (beginning_point - end_point) > blockRange {
       return false;
@@ -9,7 +9,7 @@ function produceDrivingRange() {
   };
 }
 
-function produceTipCalculator() {
+function produceTipCalculator(percentage) {
   return function(bill_amount) {
     return (bill_amount) * percentage;
   };
