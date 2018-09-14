@@ -1,6 +1,6 @@
 function produceDrivingRange(blockRange) {
   return function(beginning_point, end_point) {
-    if (beginning_point - end_point) > blockRange {
+    if ((beginning_point - end_point) > blockRange) {
       return false;
     }
     else {
