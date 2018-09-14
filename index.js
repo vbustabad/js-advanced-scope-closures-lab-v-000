@@ -1,9 +1,10 @@
 function produceDrivingRange(blockRange) {
-  let beginning_point = parseInt(beginning_point).slice(0, -2);
-  let end_point = parseInt(end_point).slice(0, -2);
-
   return function(beginning_point, end_point) {
-    if ((beginning_point - end_point) > blockRange) {
+
+    let start = parseInt(beginning_point).slice(0, -2);
+    let finish = parseInt(end_point).slice(0, -2);
+    
+    if ((start - finish) > blockRange) {
       return false;
     }
     else {
