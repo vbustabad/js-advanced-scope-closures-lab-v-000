@@ -1,7 +1,7 @@
 function produceDrivingRange(blockRange) {
   return function(beginning_point, end_point) {
 
-    let start = parseInt(beginning_point);
+    let start = parseInt(beginning_point).slice(0, -2);
     let finish = parseInt(end_point);
     let distance = (finish - start);
     let out_of_range = (distance - blockRange);
