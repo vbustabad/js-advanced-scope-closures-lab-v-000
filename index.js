@@ -10,6 +10,7 @@ function produceDrivingRange() {
     else {
       return true;
     {
+    end
   };
 }
 
